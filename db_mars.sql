@@ -50,6 +50,7 @@ CREATE TABLE book(
     cod VARCHAR(6),
     title VARCHAR(255),
     status INT,
+    release_date DATE,
     genre INT,
     pages INT,
     start_date DATE,
