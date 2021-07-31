@@ -10,6 +10,7 @@ CREATE TABLE game(
     cod VARCHAR(6),
     title VARCHAR(255),
     status INT,
+    release_date DATE,
     price DECIMAL(4,2),
     purchase_date DATE,
     start_date DATE,
