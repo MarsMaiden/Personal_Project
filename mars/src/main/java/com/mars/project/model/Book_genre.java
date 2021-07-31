@@ -1,4 +1,4 @@
-package com.andree.mars.project.model;
+package com.mars.project.model;
 
 public class Book_genre {
     private int book_genre_id;

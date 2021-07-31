@@ -1,4 +1,4 @@
-package com.andree.mars.project.model;
+package com.mars.project.model;
 
 public class Videogame_genre {
     private int videogame_genre_id;

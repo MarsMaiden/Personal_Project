@@ -1,4 +1,4 @@
-package com.andree.mars.project.model;
+package com.mars.project.model;
 
 public class Videogame_platform {
     private int videogame_platform_id;

@@ -1,4 +1,4 @@
-package com.andree.mars.project.mappers;
+package com.mars.project.mappers;
 
 import org.apache.ibatis.annotations.Mapper;
 
