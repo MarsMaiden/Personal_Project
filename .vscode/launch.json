@@ -1,0 +1,14 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot-MarsApplication<mars>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole",
+      "mainClass": "com.andree.mars.MarsApplication",
+      "projectName": "mars",
+      "args": ""
+    }
+  ]
+}
