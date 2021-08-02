@@ -16,8 +16,11 @@
 
         <association column="status" property="status"
         javaType="com.mars.project.model.Status"
-        resultMap="com.mars.project.mappers.statusMapper.statusResultMap"></association>
-
-
+        resultMap="com.mars.project.mappers.StatusMapper.statusResultMap"></association>
     </resultMap>
+
+    <select id="listGame" resultMap="gameResultMap">
+    SELECT game.title, status.descr, game.cover FROM db_mars.game
+    INNER JOIN status ON game.status = status.status_id;
+    </select>
 </mapper>

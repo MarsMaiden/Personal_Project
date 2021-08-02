@@ -6,5 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>Game</th>
+          <th>Status</th>
+          <th>Cover</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr th:if="${listGame.empty}">
+          <td>No results</td>
+        </tr>
+        <tr th:each="unit: ${listGame}">
+          <td><span th:text="${unit.title}"></span></td>
+          <td><span th:text="${unit.Status.descr}"></span></td>
+          <td><img th:src="${unit.cover}" alt="" width="120" /></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
 </html>

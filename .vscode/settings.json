@@ -13,5 +13,6 @@
       "username": "root",
       "database": "db_mars"
     }
-  ]
+  ],
+  "java.configuration.updateBuildConfiguration": "disabled"
 }

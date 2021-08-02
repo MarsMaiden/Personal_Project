@@ -1,6 +1,7 @@
 package com.mars.project.controller;
 
 import com.mars.project.model.Game;
+import com.mars.project.services.GameService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -12,11 +13,14 @@ import org.springframework.ui.Model;
 @RequestMapping("/game")
 public class GameController {
 
+    @Autowired
+    private GameService gameService;
+
     @GetMapping("/list")
     public String listGame(Model model) {
         Game game = new Game();
         model.addAttribute("game", game);
-        model.addAttribute("listGame", game);
-        return "list_game";
+        model.addAttribute("listGame", gameService.listGame());
+        return "list";
     }
 }
