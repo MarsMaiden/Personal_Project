@@ -16,7 +16,7 @@ public class GameController {
     public String listGame(Model model) {
         Game game = new Game();
         model.addAttribute("game", game);
-        model.addAttribute("listGame", game)
+        model.addAttribute("listGame", game);
         return "list_game";
     }
 }
