@@ -35,6 +35,7 @@ INSERT INTO game (title, release_date, price, purchase_date, status, start_date,
     ("Resident Evil 6 Complete", '2013-03-23', 26.23, '2016-06-15', 2, '2016-06-15', NULL, "https://www.mobygames.com/images/covers/l/321135-resident-evil-6-playstation-3-front-cover.jpg"),
     ("Limbo", '2011-08-02', 0, '2016-06-21',1, NULL, NULL, "https://cdn.thegamesdb.net/images/original/boxart/front/5950-2.jpg"),
     ("Batman Arkham Asylum GOTY", '2009-09-15', 9.67, '2016-08-17', 3, '2016-08-17', '2019-08-17',"https://cdn.thegamesdb.net/images/original/boxart/front/190-1.jpg"),
-    ("Resident Evil 4 Ultimate HD Edition", '2014-02-27', 21.10, '2016-08-03', 3, '2016-08-03', '2019-07-18', "https://cdn.thegamesdb.net/images/original/boxart/front/19786-1.jpg");
+    ("Resident Evil 4 Ultimate HD Edition", '2014-02-27', 21.10, '2016-08-03', 3, '2016-08-03', '2019-07-18', "https://cdn.thegamesdb.net/images/original/boxart/front/19786-1.jpg"),
+    ("Saints Row IV National Treasure Edition", '2014-07-08', 20.10, '2016-09-02', 2, '2016-09-02', NULL, "https://cdn.thegamesdb.net/images/original/boxart/front/75681-1.jpg");
     
 INSERT INTO game_genre VALUES (1,4), (1,5), (2,2), (3,2), (4,2), (4,3);

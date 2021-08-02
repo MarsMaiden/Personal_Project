@@ -6,7 +6,17 @@
       "request": "launch",
       "cwd": "${workspaceFolder}",
       "console": "internalConsole",
-      "mainClass": "com.andree.mars.MarsApplication",
+      "mainClass": "com.mars.MarsApplication",
+      "projectName": "mars",
+      "args": ""
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-MarsApplication<mars>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole",
+      "mainClass": "com.mars.MarsApplication",
       "projectName": "mars",
       "args": ""
     }

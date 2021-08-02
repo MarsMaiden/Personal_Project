@@ -1,4 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.mars.project.mappers.GameMapper"></mapper>
+<mapper namespace="com.mars.project.mappers.GameMapper">
+    <resultMap id="gameResultMap" type="com.mars.project.model.Game">        
+
+        <id column="game_id" property="game_id"/>
+        <result column="cod" property="cod"/>
+        <result column="title" property="title"/>
+        <result column="release_date" property="release_date"/>
+        <result column="price" property="price"/>
+        <result column="purchase_date" property="purchase_date"/>
+        <result column="start_date" property="start_date"/>
+        <result column="finish_date" property="finish_date"/>
+        <result column="cover" property="cover"/>
+
+        <association column="status" property="status"
+        javaType="com.mars.project.model.Status"
+        resultMap="com.mars.project.mappers.statusMapper.statusResultMap"></association>
+
+
+    </resultMap>
+</mapper>

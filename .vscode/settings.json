@@ -1,17 +1,17 @@
 {
-    "sqltools.connections": [
-        {
-            "mysqlOptions": {
-                "authProtocol": "default"
-            },
-            "previewLimit": 50,
-            "server": "localhost",
-            "port": 3306,
-            "askForPassword": true,
-            "driver": "MySQL",
-            "name": "localhost",
-            "username": "root",
-            "database": "db_isisgav"
-        }
-    ]
+  "sqltools.connections": [
+    {
+      "mysqlOptions": {
+        "authProtocol": "default"
+      },
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 3306,
+      "askForPassword": true,
+      "driver": "MySQL",
+      "name": "localhost",
+      "username": "root",
+      "database": "db_mars"
+    }
+  ]
 }
