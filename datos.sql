@@ -26,10 +26,10 @@ INSERT INTO book_genre (descr) VALUES ("Light Novel"),
     ("Fantasy"), ("Biography"), ("Science"), ("Auto ayuda");
 
 INSERT INTO status (descr) VALUES ("Not Started"), ("In-Progress"),
-    ("Finished");
+    ("Finished"), ("Online");
 
 INSERT INTO game (title, status, release_date, price, purchase_date, start_date, finish_date, cover) VALUES
-    ("Garry's Mod", 3, '2006-11-29', 8.32, '2016-01-02', '2016-01-02','2016-01-02', "https://cdn.thegamesdb.net/images/original/boxart/front/8506-1.jpg"),
+    ("Garry's Mod", 4, '2006-11-29', 8.32, '2016-01-02', '2016-01-02','2016-01-02', "https://cdn.thegamesdb.net/images/original/boxart/front/8506-1.jpg"),
     ("Assassin's Creed Unity", 2, '2014-10-28', 44.45, '2016-04-30', '2016-04-30', NULL, "https://cdn.thegamesdb.net/images/original/boxart/front/19850-1.jpg"),
     ("Batman: Arkham City", 3, '2011-11-25', 7.87, '2016-05-21', '2016-05-21', '2019-05-21', "https://cdn.thegamesdb.net/images/original/boxart/front/931-1.jpg"),
     ("Resident Evil 6 Complete", 2, '2013-03-23', 26.23, '2016-06-15', '2016-06-15', NULL, "https://www.mobygames.com/images/covers/l/321135-resident-evil-6-playstation-3-front-cover.jpg"),
@@ -37,6 +37,12 @@ INSERT INTO game (title, status, release_date, price, purchase_date, start_date,
     ("Batman Arkham Asylum GOTY", 3, '2009-09-15', 9.67, '2016-08-17', '2016-08-17', '2019-08-17',"https://cdn.thegamesdb.net/images/original/boxart/front/190-1.jpg"),
     ("Resident Evil 4 Ultimate HD Edition", 3, '2014-02-27', 21.10, '2016-08-03', '2016-08-03', '2019-07-18', "https://cdn.thegamesdb.net/images/original/boxart/front/19786-1.jpg"),
     ("Saints Row IV National Treasure Edition", 2, '2014-07-08', 20.10, '2016-09-02', '2016-09-02', NULL, "https://cdn.thegamesdb.net/images/original/boxart/front/75681-1.jpg"),
-    ("Batman: Arkham Knight Premium Edition", 2, '2015-06-23', 37.98, '2016-10-14', '2018-10-14', NULL, "https://cdn.thegamesdb.net/images/original/boxart/front/21456-1.jpg");
+    ("Batman: Arkham Knight Premium Edition", 2, '2015-06-23', 37.98, '2016-10-14', '2018-10-14', NULL, "https://cdn.thegamesdb.net/images/original/boxart/front/21456-1.jpg"),
+    ("Left 4 Dead", 4, '2008-11-17', 9.36, '2016-10-31', NULL, NULL, "https://cdn.thegamesdb.net/images/original/boxart/front/22-1.jpg"),
+    ("Left 4 Dead 2", 4, '2009-11-16', 7.49, '2016-10-31', '2016-10-31', NULL, "https://cdn.thegamesdb.net/images/original/boxart/front/855-1.jpg"),
+    ("Assassin's Creed II: Deluxe Edition", 3, '2009-11-17', 28.97, '2016-11-16', '2016-11-16', '2020-04-15', "https://cdn.thegamesdb.net/images/original/boxart/front/318-2.jpg"),
+    ("Dead Space", 3, '2008-10-14', 0.0, '2016-11-13', '2016-11-13', '2021-04-23', "https://cdn.thegamesdb.net/images/original/boxart/front/14-2.jpg"),
+    ("The Witcher 2: Assassins of Kings Enhanced Edition", 3, '2011-05-17', 0.0, '2016-11-13', '2017-10-01', '2017-11-20', "https://cdn.thegamesdb.net/images/original/boxart/front/61268-1.jpg"),
+    ("Grand Theft Auto: San Andreas", 3, '2005-06-07', 13.98, '2016-11-28', '2016-11-28', '2021-04-04', "https://cdn.thegamesdb.net/images/original/boxart/front/790-1.jpg");
     
 INSERT INTO game_genre VALUES (1,4), (1,5), (2,2), (3,2), (4,2), (4,3);
