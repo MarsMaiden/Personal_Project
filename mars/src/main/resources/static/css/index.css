@@ -1,0 +1,51 @@
+.add_game {
+  display: flex;
+  padding: 0px 22px;
+  position: absolute;
+  width: 349px;
+  height: 100px;
+  left: calc(50% - 349px / 2 - 342.5px);
+  top: 490px;
+  background: #ffe603;
+  border-radius: 34px;
+}
+
+.add_game a {
+  font-family: Ropa Sans;
+  font-size: 72px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+  margin: 0px 39px;
+  text-decoration: none;
+}
+
+.add_game a:hover {
+  color: aquamarine;
+}
+
+.add_book {
+  display: flex;
+  padding: 0px 22px;
+  position: absolute;
+  width: 349px;
+  height: 100px;
+  left: calc(50% - 349px / 2 + 397.5px);
+  top: 489px;
+  background: #ffe603;
+  border-radius: 34px;
+}
+
+.add_book a {
+  font-family: Ropa Sans;
+  font-size: 72px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+  margin: 0px 39px;
+  text-decoration: none;
+}
+
+.add_book a:hover {
+  color: aquamarine;
+}

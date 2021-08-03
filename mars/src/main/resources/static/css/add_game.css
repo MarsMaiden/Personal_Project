@@ -1,0 +1,78 @@
+.form_game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 1500px;
+  height: 700px;
+  left: calc(50% - 1500px / 2 + 1px);
+  top: calc(50% - 700px / 2 + 91px);
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.form_game label {
+  font-size: 36px;
+  color: #ffffff;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  width: 1336px;
+}
+
+.row {
+  padding: 10px;
+}
+
+.row input {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 30px;
+  font-size: 25px;
+}
+.row_1 input {
+  width: 1335px;
+  height: 55px;
+}
+
+.row_2 input {
+  width: 300px;
+  height: 55px;
+}
+
+.row_3 input {
+  width: 300px;
+  height: 55px;
+}
+
+.row_3 select {
+  width: 300px;
+  height: 54.06px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 25px;
+}
+
+.row_4 input {
+  width: 1335px;
+  height: 55px;
+}
+
+.col_5 {
+  display: flex;
+  justify-content: center;
+  padding: 24px 142px;
+}
+
+.row_5 button {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 142px;
+  width: 220px;
+  height: 65px;
+  background: #406ddf;
+  border-radius: 30px;
+}

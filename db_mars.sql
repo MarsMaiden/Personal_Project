@@ -12,7 +12,7 @@ CREATE TABLE game(
     status INT,
     release_date DATE,
     price DECIMAL(4,2),
-    purchase_date DATE,
+    purchase_date DATETIME,
     start_date DATE,
     finish_date DATE,
     cover LONGTEXT
