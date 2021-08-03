@@ -9,4 +9,6 @@ import org.springframework.stereotype.Service;
 @Service
 public interface GameService {
     public List<Game> listGame();
+
+    public int addGame(Game game);
 }

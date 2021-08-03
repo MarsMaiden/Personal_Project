@@ -7,4 +7,8 @@
         <id column="status_id" property="status_id"/>
         <result column="descr" property="descr"/>
     </resultMap>
+
+    <select id="listStatus" resultMap="statusResultMap">
+        SELECT * FROM db_mars.status;
+    </select>
 </mapper>

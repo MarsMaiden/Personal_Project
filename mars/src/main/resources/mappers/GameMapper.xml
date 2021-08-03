@@ -23,4 +23,11 @@
         SELECT game.cod, game.title, status.descr, game.cover FROM db_mars.game
         INNER JOIN status ON game.status = status.status_id ORDER BY game.cod;
     </select>
+
+    <insert id="addGame" parameterType="com.mars.project.model.Game">
+        INSERT INTO game (title, status, release_date, price, purchase_date, start_date, finish_date, cover)
+        VALUES
+        (#{title}, #{status.status_id}, #{release_date}, #{price},
+        #{purchase_date}, #{start_date}, #{finish_date}, #{cover});
+    </insert>
 </mapper>

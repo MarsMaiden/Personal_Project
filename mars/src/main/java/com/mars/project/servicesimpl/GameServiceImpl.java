@@ -20,4 +20,9 @@ public class GameServiceImpl implements GameService {
         return gameMapper.listGame();
     }
 
+    @Override
+    public int addGame(Game game) {
+        int result = gameMapper.addGame(game);
+        return result;
+    }
 }
