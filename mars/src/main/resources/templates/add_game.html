@@ -48,8 +48,10 @@
     <nav>
       <p>THE MARS PROJECT</p>
       <ol>
-        <a href="http://">HOME</a>
-        <a href="http://">GAMES</a>
+        <a href="index.html" th:href="@{/}">HOME</a>
+        <a href="http://" th:href="@{http://localhost:8080/mars/game/list}"
+          >GAMES</a
+        >
         <a href="http://">BOOKS</a>
       </ol>
       <div class="search">

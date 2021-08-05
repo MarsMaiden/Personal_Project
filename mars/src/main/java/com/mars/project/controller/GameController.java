@@ -32,7 +32,7 @@ public class GameController {
         Game game = new Game();
         model.addAttribute("game", game);
         model.addAttribute("listGame", gameService.listGame());
-        return "list";
+        return "game_list";
     }
 
     @GetMapping("/form")

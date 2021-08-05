@@ -11,7 +11,7 @@ CREATE TABLE game(
     title VARCHAR(255),
     status INT,
     release_date DATE,
-    price DECIMAL(4,2),
+    price DECIMAL(6,2),
     purchase_date DATE,
     start_date DATE,
     finish_date DATE,
