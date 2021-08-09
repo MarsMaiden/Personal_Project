@@ -16,6 +16,11 @@
     />
     <link
       rel="stylesheet"
+      href="../static/css/table.css"
+      th:href="@{/css/table.css}"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       th:href="@{https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css}"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
@@ -37,6 +42,26 @@
       th:href="@{https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap}"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.css"
+      th:href="@{https://cdn.datatables.net/1.10.25/css/jquery.dataTables.css}"
+    />
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      th:src="@{https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js}"
+    ></script>
+    <script
+      type="text/javascript"
+      charset="utf8"
+      src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js"
+      th:src="@{https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js}"
+    ></script>
+    <script
+      src="https://unpkg.com/@popperjs/core@2"
+      th:src="@{https://unpkg.com/@popperjs/core@2}"
+    ></script>
     <title>The Mars Project</title>
   </head>
   <body>
@@ -60,27 +85,34 @@
       </div>
     </nav>
     <div class="container">
-      <table>
-        <thead>
-          <tr>
-            <th>Code</th>
-            <th>Game</th>
-            <th>Status</th>
-            <th>Cover</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr th:if="${listGame.empty}">
-            <td>No results</td>
-          </tr>
-          <tr th:each="unit: ${listGame}">
-            <td><span th:text="${unit.cod}"></span></td>
-            <td><span th:text="${unit.title}"></span></td>
-            <td><span th:text="${unit.Status.descr}"></span></td>
-            <td><img th:src="${unit.cover}" alt="" width="120" /></td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="game_table">
+        <table id="table_id" class="display">
+          <thead>
+            <tr>
+              <th>Code</th>
+              <th>Game</th>
+              <th>Status</th>
+              <th>Cover</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr th:if="${listGame.empty}">
+              <td>No results</td>
+            </tr>
+            <tr th:each="unit: ${listGame}">
+              <td><span th:text="${unit.cod}"></span></td>
+              <td><span th:text="${unit.title}"></span></td>
+              <td><span th:text="${unit.Status.descr}"></span></td>
+              <td><img th:src="${unit.cover}" alt="" width="120" /></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
+    <script>
+      $(document).ready(function () {
+        $("#table_id").DataTable();
+      });
+    </script>
   </body>
 </html>
