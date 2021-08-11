@@ -1,5 +1,6 @@
 .game_table {
   position: absolute;
+  width: 1827px;
   left: 35px;
   top: 150px;
   background: rgba(255, 255, 255, 0.4);

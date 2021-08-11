@@ -11,13 +11,8 @@
     />
     <link
       rel="stylesheet"
-      href="../static/css/index.css"
-      th:href="@{/css/index.css}"
-    />
-    <link
-      rel="stylesheet"
-      href="../static/css/table.css"
-      th:href="@{/css/table.css}"
+      href="../static/css/game_detail.css"
+      th:href="@{/css/game_detail.css}"
     />
     <link
       rel="stylesheet"
@@ -30,6 +25,12 @@
       rel="preconnect"
       href="https://fonts.googleapis.com"
       th:href="@{https://fonts.googleapis.com}"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      th:href="@{https://fonts.gstatic.com}"
+      crossorigin
     />
     <link
       href="https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap"
@@ -52,7 +53,7 @@
       src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js"
       th:src="@{https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js}"
     ></script>
-    <title>The Mars Project</title>
+    <title>Game Detail</title>
   </head>
   <body>
     <nav>
@@ -75,32 +76,62 @@
       </div>
     </nav>
     <div class="container">
-      <div class="game_table">
-        <table id="table_id" class="display">
-          <thead>
-            <tr>
-              <th>Code</th>
-              <th>Game</th>
-              <th>Status</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr th:if="${listGame.empty}">
-              <td>No results</td>
-            </tr>
-            <tr th:each="unit: ${listGame}">
-              <td><span th:text="${unit.cod}"></span></td>
-              <td><span th:text="${unit.title}"></span></td>
-              <td><span th:text="${unit.Status.descr}"></span></td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="game_detail">
+        <div class="data">
+          <div class="row row_1">
+            <div class="col">
+              <h1>TITLE</h1>
+              <p></p>
+            </div>
+          </div>
+          <div class="row row_2">
+            <div class="col">
+              <h1>CODE</h1>
+              <p></p>
+            </div>
+            <div class="col">
+              <h1>PRICE (S/.)</h1>
+              <p></p>
+            </div>
+            <div class="col">
+              <h1>PURCHASE DATE</h1>
+              <p></p>
+            </div>
+          </div>
+          <div class="row row_3">
+            <div class="col">
+              <h1>STATUS</h1>
+              <p></p>
+            </div>
+            <div class="col">
+              <h1>START DATE</h1>
+              <p></p>
+            </div>
+            <div class="col">
+              <h1>FINISH DATE</h1>
+              <p></p>
+            </div>
+          </div>
+          <div class="row row_4">
+            <div class="col">
+              <h1>PLATFORMS</h1>
+              <p></p>
+            </div>
+            <div class="col">
+              <h1>GENRES</h1>
+              <p></p>
+            </div>
+            <div class="col">
+              <h1>RELEASE DATE</h1>
+              <p></p>
+            </div>
+          </div>
+          <div class="row row_5"></div>
+        </div>
+        <div class="game_cover">
+          <img src="" alt="" />
+        </div>
       </div>
     </div>
-    <script>
-      $(document).ready(function () {
-        $("#table_id").DataTable();
-      });
-    </script>
   </body>
 </html>
