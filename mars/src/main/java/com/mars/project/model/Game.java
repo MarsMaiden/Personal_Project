@@ -1,6 +1,8 @@
 package com.mars.project.model;
 
 import java.sql.Date;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Game {
     private int game_id;
@@ -13,9 +15,12 @@ public class Game {
     private Date start_date;
     private Date finish_date;
     private String cover;
+    private List<Videogame_platform> videogame_platforms = new ArrayList<>();
+    private List<Videogame_genre> videogame_genres = new ArrayList<>();
 
     public Game(int game_id, String cod, String title, Status status, Date release_date, double price,
-            Date purchase_date, Date start_date, Date finish_date, String cover) {
+            Date purchase_date, Date start_date, Date finish_date, String cover,
+            List<Videogame_platform> videogame_platforms, List<Videogame_genre> videogame_genres) {
         this.game_id = game_id;
         this.cod = cod;
         this.title = title;
@@ -26,6 +31,8 @@ public class Game {
         this.start_date = start_date;
         this.finish_date = finish_date;
         this.cover = cover;
+        this.videogame_platforms = videogame_platforms;
+        this.videogame_genres = videogame_genres;
     }
 
     public Game() {
@@ -109,6 +116,22 @@ public class Game {
 
     public void setCover(String cover) {
         this.cover = cover;
+    }
+
+    public List<Videogame_platform> getVideogame_platforms() {
+        return this.videogame_platforms;
+    }
+
+    public void setVideogame_platforms(List<Videogame_platform> videogame_platforms) {
+        this.videogame_platforms = videogame_platforms;
+    }
+
+    public List<Videogame_genre> getVideogame_genres() {
+        return this.videogame_genres;
+    }
+
+    public void setVideogame_genres(List<Videogame_genre> videogame_genres) {
+        this.videogame_genres = videogame_genres;
     }
 
 }
