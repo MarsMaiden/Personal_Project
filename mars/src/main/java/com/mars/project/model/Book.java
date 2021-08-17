@@ -8,13 +8,13 @@ public class Book {
     private String title;
     private Status status;
     private Date release_date;
-    private Book_genre book_genre;
+    private Book_Genre book_genre;
     private int pages;
     private Date start_date;
     private Date finish_date;
     private String cover;
 
-    public Book(int book_id, String cod, String title, Status status, Date release_date, Book_genre book_genre,
+    public Book(int book_id, String cod, String title, Status status, Date release_date, Book_Genre book_genre,
             int pages, Date start_date, Date finish_date, String cover) {
         this.book_id = book_id;
         this.cod = cod;
@@ -71,11 +71,11 @@ public class Book {
         this.release_date = release_date;
     }
 
-    public Book_genre getBook_genre() {
+    public Book_Genre getBook_genre() {
         return this.book_genre;
     }
 
-    public void setBook_genre(Book_genre book_genre) {
+    public void setBook_genre(Book_Genre book_genre) {
         this.book_genre = book_genre;
     }
 

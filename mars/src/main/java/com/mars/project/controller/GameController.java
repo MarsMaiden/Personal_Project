@@ -30,8 +30,6 @@ public class GameController {
 
     @GetMapping("/list")
     public String listGame(Model model) {
-        Game game = new Game();
-        model.addAttribute("game", game);
         model.addAttribute("listGame", gameService.listGame());
         return "game_list";
     }
@@ -59,9 +57,10 @@ public class GameController {
         return "redirect:/game/form";
     }
 
-    /*
-     * @GetMapping("/{game_id}/detail") public String game_detail(Model
-     * model, @PathVariable(name = "game_id") int game_id) {
-     * model.addAttribute("game_detail", attributeValue) return null; }
-     */
+    @GetMapping("/detail/{game_id}")
+    public String game_detail(Model model, @PathVariable(name = "game_id") int game_id) {
+        model.addAttribute("detail", gameService.getGameDetail(game_id));
+        return "game_detail";
+    }
+
 }

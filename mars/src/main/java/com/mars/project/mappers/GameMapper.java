@@ -3,6 +3,7 @@ package com.mars.project.mappers;
 import java.util.List;
 
 import com.mars.project.model.Game;
+import com.mars.project.model.Platform;
 
 import org.apache.ibatis.annotations.Mapper;
 
@@ -11,4 +12,6 @@ public interface GameMapper {
     public List<Game> listGame();
 
     public int addGame(Game game);
+
+    public List<Game> getGameDetail(int game_id);
 }

@@ -309,15 +309,15 @@ INSERT INTO `videogame_genre` (`videogame_genre_id`, `descr`) VALUES
 (5, 'Indie');
 
 --
--- Truncar tablas antes de insertar `videogame_platform`
+-- Truncar tablas antes de insertar `platform`
 --
 
-TRUNCATE TABLE `videogame_platform`;
+TRUNCATE TABLE `platform`;
 --
--- Volcado de datos para la tabla `videogame_platform`
+-- Volcado de datos para la tabla `platform`
 --
 
-INSERT INTO `videogame_platform` (`videogame_platform_id`, `descr`) VALUES
+INSERT INTO `platform` (`platform_id`, `descr`) VALUES
 (1, 'Steam'),
 (2, 'GOG'),
 (3, 'Epic'),

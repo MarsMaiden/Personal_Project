@@ -15,12 +15,12 @@ public class Game {
     private Date start_date;
     private Date finish_date;
     private String cover;
-    private List<Videogame_platform> videogame_platforms = new ArrayList<>();
-    private List<Videogame_genre> videogame_genres = new ArrayList<>();
+    private List<Platform> platforms = new ArrayList<>();
+    private List<Videogame_Genre> videogame_genres = new ArrayList<>();
 
     public Game(int game_id, String cod, String title, Status status, Date release_date, double price,
-            Date purchase_date, Date start_date, Date finish_date, String cover,
-            List<Videogame_platform> videogame_platforms, List<Videogame_genre> videogame_genres) {
+            Date purchase_date, Date start_date, Date finish_date, String cover, List<Platform> platforms,
+            List<Videogame_Genre> videogame_genres) {
         this.game_id = game_id;
         this.cod = cod;
         this.title = title;
@@ -31,7 +31,7 @@ public class Game {
         this.start_date = start_date;
         this.finish_date = finish_date;
         this.cover = cover;
-        this.videogame_platforms = videogame_platforms;
+        this.platforms = platforms;
         this.videogame_genres = videogame_genres;
     }
 
@@ -118,19 +118,19 @@ public class Game {
         this.cover = cover;
     }
 
-    public List<Videogame_platform> getVideogame_platforms() {
-        return this.videogame_platforms;
+    public List<Platform> getPlatforms() {
+        return this.platforms;
     }
 
-    public void setVideogame_platforms(List<Videogame_platform> videogame_platforms) {
-        this.videogame_platforms = videogame_platforms;
+    public void setPlatforms(List<Platform> platforms) {
+        this.platforms = platforms;
     }
 
-    public List<Videogame_genre> getVideogame_genres() {
+    public List<Videogame_Genre> getVideogame_genres() {
         return this.videogame_genres;
     }
 
-    public void setVideogame_genres(List<Videogame_genre> videogame_genres) {
+    public void setVideogame_genres(List<Videogame_Genre> videogame_genres) {
         this.videogame_genres = videogame_genres;
     }
 

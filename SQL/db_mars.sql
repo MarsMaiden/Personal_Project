@@ -24,9 +24,9 @@ CREATE TABLE videogame_genre(
     descr VARCHAR(255)
 ) ENGINE=InnoDB;
 
-DROP TABLE IF EXISTS videogame_platform;
-CREATE TABLE videogame_platform(
-    videogame_platform_id INT PRIMARY KEY AUTO_INCREMENT,
+DROP TABLE IF EXISTS platform;
+CREATE TABLE platform(
+    platform_id INT PRIMARY KEY AUTO_INCREMENT,
     descr VARCHAR(255)
 ) ENGINE=InnoDB;
 
@@ -40,8 +40,8 @@ CREATE TABLE game_genre(
 DROP TABLE IF EXISTS game_platform;
 CREATE TABLE game_platform(
     game_id INT,
-    videogame_platform_id INT,
-    PRIMARY KEY (game_id, videogame_platform_id)
+    platform_id INT,
+    PRIMARY KEY (game_id, platform_id)
 ) ENGINE=InnoDB;
 
 DROP TABLE IF EXISTS book;
@@ -86,7 +86,7 @@ ALTER TABLE game_genre
 ALTER TABLE game_platform
     ADD FOREIGN KEY (game_id) REFERENCES game(game_id)
     ON DELETE RESTRICT ON UPDATE CASCADE,
-    ADD FOREIGN KEY (videogame_platform_id) REFERENCES videogame_platform(videogame_platform_id)
+    ADD FOREIGN KEY (platform_id) REFERENCES platform(platform_id)
     ON DELETE RESTRICT ON UPDATE CASCADE;
 
 DROP TRIGGER IF EXISTS insert_game_code;

@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.mars.project.mappers.GameMapper">
     <resultMap id="gameResultMap" type="com.mars.project.model.Game">        
@@ -19,11 +21,25 @@
         resultMap="com.mars.project.mappers.StatusMapper.statusResultMap"></association>
     </resultMap>
 
+    <resultMap id="platformResult" type="com.mars.project.model.Game">
+
+        <id column="game_id" property="game_id"/>
+        <result column="title" property="title"/>
+
+        <collection javaType="ArrayList" property="platforms"
+        resultMap="com.mars.project.mappers.PlatformMapper.platformResultMap"></collection>
+
+    </resultMap>
+
     <select id="listGame" resultMap="gameResultMap">
         SELECT * FROM db_mars.game
         INNER JOIN status ON game.status = status.status_id ORDER BY game.cod;
     </select>
 
+    <select id="getCode" resultType="string" resultMap="gameResultMap" parameterType="int">
+        SELECT game.cod FROM db_mars.game WHERE game.game_id = #{game_id};
+    </select>
+    
     <insert id="addGame" parameterType="com.mars.project.model.Game">
         INSERT INTO game (title, status, release_date, price, purchase_date, start_date, finish_date, cover)
         VALUES

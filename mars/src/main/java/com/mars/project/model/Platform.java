@@ -3,26 +3,26 @@ package com.mars.project.model;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Videogame_Genre {
-    private int videogame_genre_id;
+public class Platform {
+    private int platform_id;
     private String descr;
     private List<Game> games = new ArrayList<>();
 
-    public Videogame_Genre(int videogame_genre_id, String descr, List<Game> games) {
-        this.videogame_genre_id = videogame_genre_id;
+    public Platform(int platform_id, String descr, List<Game> games) {
+        this.platform_id = platform_id;
         this.descr = descr;
         this.games = games;
     }
 
-    public Videogame_Genre() {
+    public Platform() {
     }
 
-    public int getVideogame_genre_id() {
-        return this.videogame_genre_id;
+    public int getPlatform_id() {
+        return this.platform_id;
     }
 
-    public void setVideogame_genre_id(int videogame_genre_id) {
-        this.videogame_genre_id = videogame_genre_id;
+    public void setPlatform_id(int platform_id) {
+        this.platform_id = platform_id;
     }
 
     public String getDescr() {

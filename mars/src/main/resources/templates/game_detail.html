@@ -76,46 +76,45 @@
       </div>
     </nav>
     <div class="container">
-      <div class="game_detail">
+      <div th:each="unit: ${detail}" class="game_detail">
         <div class="data">
           <div class="row row_1">
             <div class="col">
               <h1>TITLE</h1>
-              <p></p>
+              <p th:text="${unit.title}"></p>
             </div>
           </div>
           <div class="row row_2">
             <div class="col">
               <h1>CODE</h1>
-              <p></p>
+              <p th:text="${unit.cod}"></p>
             </div>
             <div class="col">
               <h1>PRICE (S/.)</h1>
-              <p></p>
+              <p th:text="${unit.price}"></p>
             </div>
             <div class="col">
               <h1>PURCHASE DATE</h1>
-              <p></p>
+              <p th:text="${unit.purchase_date}"></p>
             </div>
           </div>
           <div class="row row_3">
             <div class="col">
               <h1>STATUS</h1>
-              <p></p>
+              <p th:text="${unit.Status.descr}"></p>
             </div>
             <div class="col">
               <h1>START DATE</h1>
-              <p></p>
+              <p th:text="${unit.start_date}"></p>
             </div>
             <div class="col">
               <h1>FINISH DATE</h1>
-              <p></p>
+              <p th:text="${unit.finish_date}"></p>
             </div>
           </div>
           <div class="row row_4">
             <div class="col">
               <h1>PLATFORMS</h1>
-              <p></p>
             </div>
             <div class="col">
               <h1>GENRES</h1>
@@ -123,13 +122,13 @@
             </div>
             <div class="col">
               <h1>RELEASE DATE</h1>
-              <p></p>
+              <p th:text="${unit.release_date}"></p>
             </div>
           </div>
           <div class="row row_5"></div>
         </div>
         <div class="game_cover">
-          <img src="" alt="" />
+          <img src="" th:src="@{${unit.cover}}" width="400" />
         </div>
       </div>
     </div>

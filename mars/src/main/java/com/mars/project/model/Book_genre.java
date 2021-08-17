@@ -1,15 +1,15 @@
 package com.mars.project.model;
 
-public class Book_genre {
+public class Book_Genre {
     private int book_genre_id;
     private String descr;
 
-    public Book_genre(int book_genre_id, String descr) {
+    public Book_Genre(int book_genre_id, String descr) {
         this.book_genre_id = book_genre_id;
         this.descr = descr;
     }
 
-    public Book_genre() {
+    public Book_Genre() {
     }
 
     public int getBook_genre_id() {
