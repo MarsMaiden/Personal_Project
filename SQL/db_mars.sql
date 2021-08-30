@@ -70,6 +70,14 @@ CREATE TABLE status(
     descr VARCHAR(255)
 ) ENGINE=InnoDB;
 
+DROP TABLE IF EXISTS health;
+CREATE TABLE health(
+    health_id INT PRIMARY KEY AUTO_INCREMENT,
+    input_date DATE,
+    weight DECIMAL(3,1),
+    cycling DECIMAL(5,2)
+) ENGINE=InnoDB;
+
 ALTER TABLE game
     ADD FOREIGN KEY (status) REFERENCES status(status_id);
 
