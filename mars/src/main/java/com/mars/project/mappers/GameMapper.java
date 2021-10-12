@@ -3,7 +3,6 @@ package com.mars.project.mappers;
 import java.util.List;
 
 import com.mars.project.model.Game;
-import com.mars.project.model.Platform;
 
 import org.apache.ibatis.annotations.Mapper;
 

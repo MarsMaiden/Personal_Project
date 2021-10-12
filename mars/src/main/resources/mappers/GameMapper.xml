@@ -36,8 +36,10 @@
         INNER JOIN status ON game.status = status.status_id ORDER BY game.cod;
     </select>
 
-    <select id="getCode" resultType="string" resultMap="gameResultMap" parameterType="int">
-        SELECT game.cod FROM db_mars.game WHERE game.game_id = #{game_id};
+    <select id="getGameDetail" resultMap="gameResultMap" parameterType="int">
+        SELECT * FROM db_mars.game 
+        INNER JOIN status ON game.status = status.status_id
+        WHERE game_id = #{game_id};
     </select>
     
     <insert id="addGame" parameterType="com.mars.project.model.Game">
