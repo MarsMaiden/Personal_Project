@@ -249,7 +249,8 @@ INSERT INTO `game` (`title`, `status`, `release_date`, `price`, `purchase_date`,
 ("Battlefield 1", 4, '2016-10-21', 0, '2021-7-23', NULL, NULL, "https://cdn.thegamesdb.net/images/original/boxart/front/36615-1.jpg"),
 ("Battlefield V", 4, '2018-11-20', 0, '2021-8-2', NULL, NULL, "https://cdn.thegamesdb.net/images/original/boxart/front/55756-1.jpg"),
 ("A Plague Tale: Innocence", 1, '2019-5-13', 0, '2021-8-8', NULL, NULL, "https://cdn.thegamesdb.net/images/original/boxart/front/67046-1.jpg"),
-("Devour", 4, '2021-1-28', 9.2, '2021-9-27', NULL, NULL, "https://cdn.thegamesdb.net/images/original/boxart/front/88475-1.jpg");
+("Devour", 4, '2021-1-28', 9.2, '2021-9-27', NULL, NULL, "https://cdn.thegamesdb.net/images/original/boxart/front/88475-1.jpg"),
+("Ghostrunner", 1, '2020-10-27', 0, '2021-10-2', NULL, NULL, "https://cdn.thegamesdb.net/images/original/boxart/front/79370-1.jpg");
 
 --
 -- Truncar tablas antes de insertar `game_genre`

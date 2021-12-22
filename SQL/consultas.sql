@@ -36,3 +36,12 @@ game.cover FROM db_mars.game
 INNER JOIN status ON game.status = status.status_id
 WHERE game_id = 1;
 
+COUNT(cod) as CANTIDAD
+
+SELECT YEAR(release_date), STATUS.descr, count(cod),
+SUM(IF(STATUS.descr="Finished",price, 0)) AS SUMA
+FROM db_mars.game
+INNER JOIN status ON game.status = status.status_id
+GROUP BY status
+ORDER BY YEAR(release_date), STATUS.descr ASC;
+
