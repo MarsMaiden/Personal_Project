@@ -53,8 +53,6 @@ CREATE TABLE book(
     release_date DATE,
     genre INT,
     pages INT,
-    start_date DATE,
-    finish_date DATE,
     cover LONGTEXT
 ) ENGINE=InnoDB;
 
