@@ -1,6 +1,6 @@
 import os
 
-directory = "C:/Users/Mars/Pictures/"
+directory = "C:/Users/Mars/Videos/"
 
 for root, subdirectories, files in os.walk(directory):
     for subdirectory in subdirectories:
